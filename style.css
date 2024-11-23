@@ -1,4 +1,4 @@
-body{
+/* body{
     background-color:aliceblue;
     font-family: "Poppins", sans-serif;
 
@@ -78,4 +78,170 @@ a{
       border-radius: 5px;
       margin-left: 120px;
 
+} */
+body {
+    background-color: aliceblue;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: column; /* Default for smaller screens */
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.form {
+    width: 100%; /* Full width by default */
+    max-width: 400px; /* Restrict max width */
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo > h2 {
+    font-family: "Poppins", sans-serif;
+    color: rgba(0, 0, 255, 0.801);
+    font-size: 40px;
+}
+
+.logo > p {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+#style {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid black;
+    margin-top: 10px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+input:hover {
+    outline: 2px solid blue;
+}
+
+button {
+    width: 100%;
+    height: 50px;
+    margin-top: 15px;
+    color: white;
+    background-color: rgba(0, 0, 255, 0.973);
+    font-size: large;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: blue;
+}
+
+.an {
+    text-align: center;
+    padding-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(0, 0, 255, 0.959);
+}
+
+.linkbutton {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 17px;
+    color: white;
+    background-color: green;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 0;
+    width: 100%; /* Full width for smaller screens */
+    box-sizing: border-box;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+    .main {
+        flex-direction: row; /* Side-by-side layout for larger screens */
+        justify-content: center;
+    }
+
+    .logo {
+        width: 40%;
+        text-align: left;
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+
+    .logo > h2 {
+        font-size: 50px;
+    }
+
+    .logo > p {
+        font-size: 22px;
+    }
+
+    .form {
+        width: 40%;
+    }
+
+    #style {
+        margin-top: 50px;
+        width: 100%;
+        max-width: 400px; /* Restrict form size on large screens */
+    }
+
+    .linkbutton {
+        margin-left: 0;
+        width: auto; 
+    }
+}
+
+@media (max-width: 480px) {
+    .logo > h2 {
+        font-size: 30px;
+    }
+
+    .logo > p {
+        font-size: 16px;
+    }
+
+    #style {
+        padding: 15px;
+    }
+
+    button {
+        font-size: medium;
+    }
+
+    .linkbutton {
+        font-size: 15px;
+        padding: 8px 16px;
+    }
 }
